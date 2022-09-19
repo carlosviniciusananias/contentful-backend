@@ -1,9 +1,12 @@
-import express from 'express'
+import express from "express";
+import getProducts from "../services/products";
 
-const route = express.Router()
+const route = express.Router();
 
-route.get('/products', (req, res) => {
-    res.send('get all products')
-})
+route.get("/products", async (req, res) => {
+  const data = await getProducts();
 
-export default route
+  res.send(data);
+});
+
+export default route;
