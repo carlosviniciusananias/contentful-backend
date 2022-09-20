@@ -1,4 +1,4 @@
-import express, { Express, Request, Response } from 'express';
+import express, { Express, Request, Response } from "express";
 import router from "./routes/route";
 
 const PORT = process.env.PORT || 5000;
