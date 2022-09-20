@@ -1,10 +1,10 @@
 const express = require("express");
-const { getProducts } = require("../services/products");
+const services = require("../services/products");
 
 const router = express.Router();
 
 router.get("/products", async (req, res) => {
-  const data = await getProducts();
+  const data = await services.getProducts();
 
   res.send(data);
 });
