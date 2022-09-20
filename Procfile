@@ -1,2 +1,1 @@
-
-web: yarn production
+web: node index.js
