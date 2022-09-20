@@ -6,7 +6,7 @@
   "author": "Carlos Vinicius Ananias",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index"
   },
   "dependencies": {
     "@types/cors": "^2.8.12",
