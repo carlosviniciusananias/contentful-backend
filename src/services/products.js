@@ -1,4 +1,4 @@
-import { client } from "./client";
+const { client } = require("./client");
 
 const getProducts = () => {
   const data = client
@@ -11,4 +11,4 @@ const getProducts = () => {
   return data;
 };
 
-export default getProducts;
+module.exports = getProducts;

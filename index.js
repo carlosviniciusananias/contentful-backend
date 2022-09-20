@@ -1,14 +1,14 @@
-import express, { Express, Request, Response } from "express";
-import router from "./routes/route";
+const express = require("express");
+const router = require("./src/routes/route");
 
 const PORT = process.env.PORT || 5000;
 
-const app: Express = express();
+const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/", (req: Request, res: Response) => {
+app.get("/", (req, res) => {
   res.send("hello, welcome to my service");
 });
 
